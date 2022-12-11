@@ -1,0 +1,45 @@
+@import '../../styles/utils.scss';
+
+.brandTitle {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: $color-black2;
+    margin: 24px 0 16px;
+}
+
+.brandTitle:first-of-type {
+    margin-bottom: 16px !important;
+}
+
+.marcas-parceiras {
+    font-size: 32px;
+    line-height: 49px;
+}
+
+.brandCards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    
+    .onlyCard {
+        width: 308px;
+    }
+
+    &::-webkit-scrollbar {
+        // background: transparent;
+    }
+     
+    &::-webkit-scrollbar-track {
+        // background: blue;
+
+    }
+     
+    &::-webkit-scrollbar-thumb {
+        // background: green;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/utils.scss';
+
+#react-burger-menu-btn {
+    width: 24px !important;
+    height: 24px !important;
+    background: url('../../../assets/icon-hamburguer.png') !important;
+    top: 32px !important;
+}
+
+.bm-overlay {
+    top: 118px;
+    left: 0;
+    max-width: 80vw;
+    background: $color-white !important;
+    opacity: 1;
+    border-right: 10px solid black;
+    border-top: 10px solid #000;
+}
+
+.bm-menu-wrap {
+    top: 128px;
+    left: 0;
+}

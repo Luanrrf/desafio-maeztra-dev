@@ -1,0 +1,49 @@
+@import '../../../styles/utils.scss';
+
+.brandCards .card {
+    display: flex;
+    background-color: $color-gray;
+    padding: 0.8333vw 1.40625vw;
+    border-radius: 4px;
+    width: 100%;
+    align-items: center;
+    margin: 0 0.41666vw;
+    min-width: 298px;
+    max-width: 308px;
+    max-height: 64px;
+    flex-direction: row;
+    border: 0;
+
+    .secondColumn {
+        margin-left: 1.145833vw;
+
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-black;
+
+        h3 {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: $color-black2;
+        }
+    }
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media screen and (max-width: 1025px) {   
+    .brandCards .card {
+        height: 64px;
+        padding-left: 26px;
+        .secondColumn {
+            padding-left: 21px;
+        }
+    }
+}

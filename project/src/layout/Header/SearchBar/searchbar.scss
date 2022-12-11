@@ -1,0 +1,40 @@
+@import '../../../styles/utils.scss';
+@import '../../../styles/patterns.scss';
+
+.searchGroup {
+    background: $color-gray;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 41.14583vw;
+
+    .searchForm {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+    
+        .searchInput {
+            margin-left: 24px;
+            width: 100%;
+            background: transparent;
+            border: 0;
+            transition: 0.5s all ease-in-out;
+            outline: 0;
+            
+            font-family: $font-family;
+            color: $color-black2;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    
+        .searchButton {
+            width: 120px;    
+            &:hover {
+                filter: brightness(95%);
+            }
+        }
+    }
+}
+
+

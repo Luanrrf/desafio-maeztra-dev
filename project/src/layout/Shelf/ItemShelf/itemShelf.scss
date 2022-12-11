@@ -1,0 +1,151 @@
+@import '../../../styles/utils.scss';
+
+.carousel-item .slider-section {
+    max-width: 100%;
+    display: flex;
+}
+
+.productShelf {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 20%;
+    padding: 0 8px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-black;
+    text-align: left;
+
+    img {
+        height: 19.84375vw !important;
+    }
+}
+
+.rtds-single-slide-styles div:first-of-type .productShelf:nth-child(1) {
+    padding: 0 8px!important;
+}
+
+.colors {
+    display: flex;
+}
+
+.productColor {
+    border-radius: 4px;
+    width: 27px;
+    height: 27px;
+    margin: 8px 8px 8px 0;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        filter: brightness(85%);
+    }
+}
+
+.color-black3 { 
+    background: $color-black3 
+};
+
+.color-gray2 { 
+    background: #EAE9E5 
+};
+
+.color-yellow { 
+    background: #DEAC71 
+};
+
+.color-red { 
+    background: #D37164 
+};
+
+.color-red2 { 
+    background: #D84E4B 
+};
+
+.color-blue { 
+    background: #6497D3 
+};
+
+.color-darkblue { 
+    background: #3C3B79 
+};
+
+.color-beige {
+    background: #CFC9B0 
+};
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: $color-black2;
+    margin-bottom: 0;
+}
+
+.name {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+
+.description {
+    opacity: 0.5;
+    margin-bottom: 8px;
+}
+
+.productAddButton {
+    height: 35px;
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: 0.3s all ease-in-out;
+    &:hover {
+        filter: brightness(90%)
+    }
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 2% !important;
+    span {
+        width: 19px;
+    }
+}
+
+.carousel-control-prev-icon {
+    background: url('../../../assets/icon-previous.png') center center no-repeat !important;
+}
+
+.carousel-control-next-icon {
+    background: url('../../../assets/icon-next.png') center center no-repeat !important;
+}
+
+@media screen and (max-width: 1300px) {
+    .name {
+        font-size: 14px;
+        line-height: 22px;
+    } 
+}
+
+@media screen and (max-width: 1200px) {
+    .name {
+        font-size: 12px;
+        line-height: 20px;
+    } 
+}
+
+@media screen and (max-width: 1025px) {
+    .productShelf {
+        max-width: none;
+
+        img {
+            height: 100% !important;
+        }
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+        width: 10% !important;
+    }
+}
